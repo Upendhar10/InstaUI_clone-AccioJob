@@ -9,6 +9,8 @@ body {
   height: 100%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #fafafa;
+
+  display: flex;
 }
 
 .sidebar {
@@ -16,6 +18,8 @@ body {
   background-color: #fff;
   margin: 0.25rem;
   border-radius: 10px;
+
+  height: fit-content;
 }
 
 nav {
@@ -54,4 +58,110 @@ nav span,
 .bx {
   font-size: 1.1rem;
   padding: 0.5rem;
+}
+
+/* ------------------------------------------------ */
+
+/* --------------------------------------------- */
+.Profile-footer {
+  width: 30%;
+  background-color: #fff;
+  margin: 0.25rem;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Profile-footer .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.profile .user-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.profile .user-data span {
+  color: lightgrey;
+}
+
+.Profile-footer .profile img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.Profile-footer .footer-links span,
+.copyright span {
+  font-weight: 300;
+  font-size: 0.75rem;
+  color: lightgrey;
+  cursor: pointer;
+}
+
+.suggest-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.5rem 0;
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding: 0.5rem 0;
+}
+
+.suggestions .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.suggestions .user-data {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.suggestions .user-data img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.followbtn {
+  color: blue;
+  cursor: pointer;
+}
+
+.suggestions .user .user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestions .user .user-info span {
+  font-weight: 300;
+  font-size: 0.65rem;
+  color: lightgrey;
+  cursor: pointer;
+}
+
+.copyright {
+  text-transform: uppercase;
+  padding-top: 0.5rem;
 }
