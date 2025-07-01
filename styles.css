@@ -61,7 +61,130 @@ nav span,
 }
 
 /* ------------------------------------------------ */
+.main-cont {
+  width: 50%;
+  background-color: #fff;
+  margin: 0.25rem;
+  border-radius: 10px;
 
+  height: 100vh;
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.stories {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: scroll;
+  padding: 0.5rem;
+  border-bottom: 1px solid lightgrey;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.story img {
+  height: 50px;
+  width: 50px;
+  border: 2px solid #fff;
+  margin: 0.5rem;
+
+  object-fit: center;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+/* --------------------------------------------- */
+
+.post {
+  width: 75%;
+  margin: 5px auto;
+  /* border: 1px solid black; */
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0.5rem 0; */
+}
+
+.post-user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.post-user .verified {
+  height: 20px;
+  width: 20px;
+}
+
+.post-user img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.post-img img {
+  width: 100%;
+}
+
+.post-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-icons i {
+  font-size: 1.5rem;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.caption span {
+  font-weight: 600;
+}
+
+.caption i {
+  color: lightgray;
+}
+
+.add-comment {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+
+.add-comment input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
 /* --------------------------------------------- */
 .Profile-footer {
   width: 30%;
