@@ -18,7 +18,7 @@ body {
   background-color: #fff;
   margin: 0.25rem;
   border-radius: 10px;
-
+  min-width: 180px;
   height: fit-content;
 }
 
@@ -63,11 +63,10 @@ nav span,
 /* ------------------------------------------------ */
 .main-cont {
   width: 50%;
+  min-width: 300px;
   background-color: #fff;
   margin: 0.25rem;
   border-radius: 10px;
-
-  height: 100vh;
 
   overflow-y: scroll;
   scrollbar-width: none;
@@ -188,13 +187,14 @@ nav span,
 /* --------------------------------------------- */
 .Profile-footer {
   width: 30%;
+  width: 250px;
   background-color: #fff;
   margin: 0.25rem;
   border-radius: 10px;
   height: fit-content;
   padding: 1rem;
 
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -287,4 +287,16 @@ nav span,
 .copyright {
   text-transform: uppercase;
   padding-top: 0.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 550px) {
+  .Profile-footer {
+    display: flex;
+  }
+
+  .main-cont {
+    height: 100vh;
+  }
 }
